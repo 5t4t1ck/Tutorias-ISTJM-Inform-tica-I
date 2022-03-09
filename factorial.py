@@ -1,0 +1,12 @@
+def factorial(n):
+    """
+    Calcular el factorial de n
+    n int>0
+    return n!
+    """
+# comenzamnos con el caso base
+    if n == 1:
+        return 1
+    return n * factorial(n-1)
+n = int(input("Escribe un entero: "))
+print(factorial(n))
